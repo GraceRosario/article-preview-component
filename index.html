@@ -1,32 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
 
-</head>
-<body>
+  <body>
+    <main>
+      <article class="card">
+        <img src="./images/drawers.jpg" alt="drawers" />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+        <div class="card__content">
+          <div class="card__header">
+            <h1 class="heading">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+          </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I've got some simple tips 
-  to help you make any room feel complete.
+          <div class="card__body">
+            <p class="content">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
 
-  Michelle Appleton
-  28 Jun 2020
+          <div class="card__footer">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle Appleton" />
+            <div class="card__user-info">
+              <p class="card__name">Michelle Appleton</p>
+              <p class="card__date">28 Jun 2020</p>
+            </div>
+            <div class="tool-tip">
+              <p class="share-text">SHARE</p>
+              <button>
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="facebook"
+                  class="social-media-button"
+                />
+              </button>
+              <button>
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="twitter"
+                  class="social-media-button"
+                />
+              </button>
+              <button>
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt="pinterest"
+                  class="social-media-button"
+                />
+              </button>
+              <button>
+                <img
+                  src="./images/icon-share.svg"
+                  alt="share"
+                  class="share-button"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
 
-  Share
-  
-  <footer>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>
