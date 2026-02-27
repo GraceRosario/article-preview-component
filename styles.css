@@ -71,8 +71,11 @@ footer a {
 .card__date {
   font-size: 0.75rem;
 }
-
 .card__user-info {
+  display: flex;
+}
+
+.card__user-about {
   margin: 0 1rem;
 }
 
@@ -80,7 +83,6 @@ footer a {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  /* margin-right: 1rem; */
 }
 
 .share-icon {
@@ -96,4 +98,75 @@ footer a {
   border: #9eafc2;
   border-radius: 50%;
   align-self: center;
+  z-index: 2;
+}
+
+.card--share-active .card__content {
+  padding: 0;
+}
+
+.card--share-active .card__header {
+  padding: 2rem 2rem 0 2rem;
+}
+
+.card--share-active .card__body {
+  padding: 0 2rem;
+}
+
+.card--share-active .card__footer {
+  background-color: #48556a;
+  padding: 2rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.card--share-active .share-text {
+  color: #9eafc2;
+  letter-spacing: 5px;
+  font-size: 0.75rem;
+}
+
+.card--share-active .share-icon {
+  fill: #ffffff;
+}
+
+.card--share-active .twitter-icon,
+.card--share-active .facebook-icon,
+.card--share-active .pinterest-icon, .card--share-active .social-media-button {
+  background-color: #48556a;
+  width: 20px;
+  height: 20px;
+}
+
+.card--share-active .card__tooltip {
+  min-width: 150px;
+  width: 60%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card--share-active button {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card--share-active .card__user-info {
+  display: none;
+}
+
+.card--share-active .share-button {
+  background-color: #6d7f97;
+}
+
+.card--share-active .share-icon path {
+  fill: #ffffff;
+}
+
+.card--share-active .social-media-button,
+.card--share-active .share-text {
+  display: flex;
 }
