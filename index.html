@@ -11,7 +11,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,12 +20,14 @@
       rel="stylesheet"
     />
 
+    <script src="./script.js" defer></script>
+
     <title>Frontend Mentor | Article preview component</title>
   </head>
 
   <body>
     <main>
-      <article class="card">
+      <article class="card .card--share-active">
         <img src="./images/drawers.jpg" alt="drawers" class="drawers-img" />
 
         <div class="card__content">
@@ -45,45 +47,52 @@
           </div>
 
           <div class="card__footer">
-            <img
-              src="./images/avatar-michelle.jpg"
-              alt="Michelle Appleton"
-              class="card__user-img"
-            />
             <div class="card__user-info">
-              <p class="card__name">Michelle Appleton</p>
-              <p class="card__date">28 Jun 2020</p>
-            </div>
-            <div class="tool-tip">
-              <p class="share-text">SHARE</p>
-              <button class="social-media-button">
-                <img
-                  src="./images/icon-facebook.svg"
-                  alt="facebook"
-                  class="facebook-icon"
-                />
-              </button>
-              <button class="social-media-button">
-                <img
-                  src="./images/icon-twitter.svg"
-                  alt="twitter"
-                  class="twitter-icon"
-                />
-              </button>
-              <button class="social-media-button">
-                <img
-                  src="./images/icon-pinterest.svg"
-                  alt="pinterest"
-                  class="pinterest-icon"
-                />
-              </button>
-            </div>
-            <button class="share-button">
               <img
+                src="./images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+                class="card__user-img"
+              />
+              <div class="card__user-about">
+                <p class="card__name">Michelle Appleton</p>
+                <p class="card__date">28 Jun 2020</p>
+              </div>
+            </div>
+
+            <div class="card__tooltip">
+          <p class="share-text">SHARE</p>
+          <button class="social-media-button">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook"
+              class="facebook-icon"
+            />
+          </button>
+          <button class="social-media-button">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter"
+              class="twitter-icon"
+            />
+          </button>
+          <button class="social-media-button">
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="pinterest"
+              class="pinterest-icon"
+            />
+          </button>
+        </div>
+
+            <button class="share-button">
+              <!-- <img
                 src="./images/icon-share.svg"
                 alt="share"
                 class="share-icon"
-              />
+              /> -->
+              <svg class="share-icon">
+              <path xmlns="http://www.w3.org/2000/svg" fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+              </svg>
             </button>
           </div>
         </div>
