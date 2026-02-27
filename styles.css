@@ -153,6 +153,11 @@ footer a {
   justify-content: center;
 }
 
+.share-button:focus-visible {
+  outline: 2px solid #6d7f97;
+  outline-offset: 2px;
+}
+
 
 .card--share-active .card__user-info {
   display: none;

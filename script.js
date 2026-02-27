@@ -11,5 +11,11 @@ shareBtn.addEventListener("click", (e) => {
 document.addEventListener("click", (e) => {
   if (!cardFooter.contains(e.target)) {
     card.classList.remove("card--share-active");
-  }
+  } 
 });
+
+shareBtn.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        card.classList.remove('card--share-active')
+    }
+})
