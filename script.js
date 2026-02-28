@@ -1,5 +1,3 @@
-// const tooltip = document.querySelector('.card__tooltip');
-// const userInfo = document.querySelector('.card__user-info');
 const shareBtn = document.querySelector(".share-button");
 const card = document.querySelector(".card");
 const cardFooter = document.querySelector(".card__footer");
